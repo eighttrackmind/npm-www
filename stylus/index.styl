@@ -416,20 +416,6 @@ html body ul.search-results .package.search-result {
       padding: 16px;
       background-color: #fff;
       margin-right: -260px;
-
-      &#readme {
-        h1 { font-size: 24px; }
-        img {
-          max-width:100%;
-        }
-        pre {
-          max-width:100%;
-          overflow:auto;
-          font-family: Monaco, monospace;
-          background-color: #f9f9f8;
-          padding: 16px;
-        }
-      }
     }
   }
   .user {
@@ -459,5 +445,41 @@ html body ul.search-results .package.search-result {
   }
   table.metadata tr:first-child {
     border-top: none;
+  }
+}
+// readme styling
+
+
+#readme {
+  h1 {
+    font-size: 24px;
+  }
+  img {
+    max-width:100%;
+  }
+
+  code,
+  pre {
+    font-family: Monaco, monospace;
+  }
+
+  code {
+    font-size: .8em;
+  }
+
+  pre {
+    max-width:100%;
+    overflow:auto;
+    background-color: #f9f9f8;
+    padding: 16px;
+  }
+
+  td, th {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  table tr:nth-child(2n) td {
+    background: #f8f8f8;
   }
 }
